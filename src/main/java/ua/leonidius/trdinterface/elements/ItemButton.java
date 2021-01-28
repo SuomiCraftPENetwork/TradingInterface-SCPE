@@ -14,8 +14,6 @@ import ua.leonidius.trdinterface.ItemName;
 import ua.leonidius.trdinterface.Message;
 import ua.leonidius.trdinterface.Trading;
 
-import java.io.File;
-
 public class ItemButton extends ElementButton {
 
     private String id;

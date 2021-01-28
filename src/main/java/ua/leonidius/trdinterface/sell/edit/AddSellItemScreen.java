@@ -6,7 +6,6 @@ import cn.nukkit.form.window.FormWindowCustom;
 import cn.nukkit.item.Item;
 import ua.leonidius.trdinterface.ItemName;
 import ua.leonidius.trdinterface.Message;
-import ua.leonidius.trdinterface.Trading;
 import ua.leonidius.trdinterface.screens.Screen;
 
 import static ua.leonidius.trdinterface.Trading.sellCfg;

@@ -7,10 +7,7 @@ import cn.nukkit.form.window.FormWindowCustom;
 import cn.nukkit.utils.ConfigSection;
 import ua.leonidius.trdinterface.ItemName;
 import ua.leonidius.trdinterface.Message;
-import ua.leonidius.trdinterface.Trading;
 import ua.leonidius.trdinterface.screens.Screen;
-
-import java.util.*;
 
 import static ua.leonidius.trdinterface.Trading.buyCfg;
 import static ua.leonidius.trdinterface.Trading.settings;

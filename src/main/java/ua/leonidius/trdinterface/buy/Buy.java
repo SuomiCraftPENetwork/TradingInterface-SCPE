@@ -25,6 +25,9 @@ public abstract class Buy {
 
         double cost = amount*price;
         EconomyAPI.getInstance().reduceMoney(player, cost);
+
+        if (item.getId() == 100 && item.getDamage() == 14) item.setCustomName("§cProtection Block");
+
         player.getInventory().addItem(item);
 
         // Success

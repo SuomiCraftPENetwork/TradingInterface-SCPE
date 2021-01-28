@@ -6,16 +6,12 @@
 
     <groupId>ua.leonidius</groupId>
     <artifactId>trdinterface</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.3-SCPE.1</version>
 
     <repositories>
         <repository>
             <id>nukkitx-repo</id>
             <url>https://repo.nukkitx.com/snapshot/</url>
-        </repository>
-        <repository>
-            <id>onebone</id>
-            <url>http://jenkins.onebone.me/plugin/repository/everything/</url>
         </repository>
     </repositories>
 
@@ -28,9 +24,11 @@
         </dependency>
         <dependency>
             <groupId>me.onebone</groupId>
-            <artifactId>economyapi</artifactId>
-            <version>1.0.0</version>
-            <scope>provided</scope>
+            <artifactId>EconomyAPI</artifactId>
+            <version>0</version>
+            <optional>false</optional>
+            <scope>system</scope>
+            <systemPath>${basedir}/EconomyAPI.jar</systemPath>
         </dependency>
     </dependencies>
 
