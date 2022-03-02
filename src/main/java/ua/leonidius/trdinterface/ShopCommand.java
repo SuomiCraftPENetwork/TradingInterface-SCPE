@@ -30,7 +30,7 @@ public class ShopCommand extends PluginCommand implements CommandExecutor{
         Player player = sender.getServer().getPlayer(sender.getName());
 
         if (player != null) {
-            player.showFormWindow(new MainScreen(player.hasPermission("shop.edit")));
+            player.showFormWindow(new MainScreen(player));
         }
         return true;
     }

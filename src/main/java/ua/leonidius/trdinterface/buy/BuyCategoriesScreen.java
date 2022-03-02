@@ -32,7 +32,7 @@ public class BuyCategoriesScreen extends FormWindowSimple implements Screen {
 
     public void onResponse(PlayerFormRespondedEvent event) {
         if (getResponse().getClickedButtonId() == 0) { // Back
-            event.getPlayer().showFormWindow(new MainScreen(event.getPlayer().hasPermission("shop.edit")));
+            event.getPlayer().showFormWindow(new MainScreen(event.getPlayer()));
             return;
         }
 

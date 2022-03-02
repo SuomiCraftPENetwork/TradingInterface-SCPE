@@ -4,7 +4,6 @@ import cn.nukkit.Player;
 import cn.nukkit.event.player.PlayerFormRespondedEvent;
 import cn.nukkit.form.element.ElementButton;
 import cn.nukkit.form.window.FormWindowSimple;
-import cn.nukkit.item.Item;
 import ua.leonidius.trdinterface.Message;
 import ua.leonidius.trdinterface.Trading;
 import ua.leonidius.trdinterface.elements.ItemButton;
@@ -32,7 +31,7 @@ public class EditSellListScreen extends FormWindowSimple implements Screen {
         Player player = event.getPlayer();
 
         if (getResponse().getClickedButtonId() == 0) { // Back
-            player.showFormWindow(new MainScreen(player.hasPermission("shop.edit")));
+            player.showFormWindow(new MainScreen(player));
         } else if (getResponse().getClickedButtonId() == 1) { // Add item
             player.showFormWindow(new AddSellItemScreen());
         } else { // Edit item

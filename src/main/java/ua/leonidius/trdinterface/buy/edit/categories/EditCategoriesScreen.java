@@ -30,7 +30,7 @@ public class EditCategoriesScreen extends FormWindowSimple implements Screen {
         Player player = event.getPlayer();
 
         if (getResponse().getClickedButtonId() == 0) { // Back button
-            player.showFormWindow(new MainScreen(player.hasPermission("shop.edit")));
+            player.showFormWindow(new MainScreen(player));
         } else if (getResponse().getClickedButtonId() == 1) { // Add button
             player.showFormWindow(new AddCategoryScreen());
         } else {

@@ -26,12 +26,13 @@ public enum Message {
     CMD_SHOP ("Opens the shop interface"),
 
     // Main menu
-    WDW_MAIN_TITLE ("Main menu"),
+    WDW_MAIN_TITLE ("Shop"),
     MENU_BUY ("Buy items"),
     MENU_SELL ("Sell items"),
     MENU_EDIT_BUY_LIST ("Edit buyable items"),
     MENU_EDIT_SELL_LIST ("Edit sellable items"),
     MENU_CUSTOM_NAMES ("Custom item names"),
+    MENU_CONTENT_BALANCE("Balance: %1%\uE102\n\u00A70"),
 
     // Buttons
     BTN_BACK ("< Back"),

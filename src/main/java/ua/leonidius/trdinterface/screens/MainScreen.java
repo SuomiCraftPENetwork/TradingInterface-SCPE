@@ -6,9 +6,11 @@
  */
 package ua.leonidius.trdinterface.screens;
 
+import cn.nukkit.Player;
 import cn.nukkit.event.player.PlayerFormRespondedEvent;
 import cn.nukkit.form.element.ElementButton;
 import cn.nukkit.form.window.FormWindowSimple;
+import me.onebone.economyapi.EconomyAPI;
 import ua.leonidius.trdinterface.Message;
 import ua.leonidius.trdinterface.buy.BuyCategoriesScreen;
 import ua.leonidius.trdinterface.buy.edit.categories.EditCategoriesScreen;
@@ -17,11 +19,11 @@ import ua.leonidius.trdinterface.sell.edit.EditSellListScreen;
 
 public class MainScreen extends FormWindowSimple implements Screen {
 
-    public MainScreen(boolean hasPermission) {
-        super(Message.WDW_MAIN_TITLE.getText(), "");
+    public MainScreen(Player player) {
+        super(Message.WDW_MAIN_TITLE.getText(), Message.MENU_CONTENT_BALANCE.getText(EconomyAPI.getInstance().myMoney(player)));
         addButton(new ElementButton(Message.MENU_BUY.getText()));
         addButton(new ElementButton(Message.MENU_SELL.getText()));
-        if (hasPermission) {
+        if (player.hasPermission("shop.edit")) {
             addButton(new ElementButton(Message.MENU_EDIT_BUY_LIST.getText()));
             addButton(new ElementButton(Message.MENU_EDIT_SELL_LIST.getText()));
             addButton(new ElementButton(Message.MENU_CUSTOM_NAMES.getText()));
